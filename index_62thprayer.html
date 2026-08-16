@@ -699,11 +699,6 @@ async function submitToSheet() {
     const result = await res.json();
     if (result.status === "ok") {
       showToast("저장 완료!", "success");
-      setTimeout(() => {
-        clearAll();
-        document.getElementById("nameInput").value  = "";
-        document.getElementById("classInput").value = "";
-      }, 1500);
     } else {
       showToast("오류: " + (result.message || "다시 시도해 주세요"), "error");
     }
