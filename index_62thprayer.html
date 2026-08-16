@@ -18,13 +18,18 @@
     --radius:10px;
   }
   * { box-sizing:border-box; margin:0; padding:0; -webkit-tap-highlight-color:transparent; }
+  html { background:#e5e0d3; }
   body {
+    max-width:480px; margin:0 auto;
     background:var(--paper); color:var(--ink);
     font-family:'Noto Sans KR',sans-serif;
     min-height:100vh;
     padding-bottom:env(safe-area-inset-bottom,20px);
     -webkit-overflow-scrolling:touch;
     overflow-x:hidden;
+  }
+  @media (min-width:481px) {
+    body { box-shadow:0 0 30px rgba(0,0,0,0.12); }
   }
 
   /* ── 헤더 ── */
@@ -327,13 +332,12 @@
 <body>
 
 <header class="header">
-  <h1>62기 수지주일반<br>스탭 중보기도회</h1>
+  <h1>62기 수지주일반<br>스탭 중보기도</h1>
   <span class="period-badge">중보 기도 기간 : 8/17~8/30</span>
   <div class="intro-box">
-    <p class="intro-title">62기 수지주일반 전도폭발훈련<br>릴레이 중보기도 안내</p>
     <p class="intro-text">
       62기 수지주일반 전도폭발훈련을 위해<br>
-      각 처소에서 <strong>릴레이 중보기도회</strong>를 진행하고자 합니다.<br><br>
+      각 처소에서 <strong>릴레이 중보기도</strong>를 진행하고자 합니다.<br><br>
       <span class="bible-verse">"다니엘이 세 이레 동안 절제하며 하나님 앞에 기도하니라."         - 다니엘서 10장 2–3절 -</span><br>
       다니엘이 하나님 앞에 마음을 낮추고 기도했던 것처럼,<br>
       우리도 훈련을 위해 한마음으로 기도하며 하나님께 나아가기를 소망합니다.<br><br>
